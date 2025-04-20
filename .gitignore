@@ -1,0 +1,30 @@
+# Android Studio ile ilgili dosyalar
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# Build dosyaları
+/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Sistem dosyaları
+.DS_Store
+
+# Log dosyaları
+*.log
+
+# Keystore dosyaları (Gizli ve önemli!)
+*.jks
+
+# İstenmeyen dosyalar
+*.apk
+*.aar
+
+# Kotlin özel dosyalar
+*.kotlin_module
+
+# Geçici dosyalar
+*.swp
