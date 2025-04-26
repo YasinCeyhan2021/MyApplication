@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/logo</item>
         <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="31">@color/splash_background</item>
         <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/splash_background</item>

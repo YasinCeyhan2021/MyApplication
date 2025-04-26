@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
     TextView appName;
     ImageView splashLogo;
     String fullText;
-    int index = 0;
+    int index = 0, logoAnimMiliSn = 500;
     private Handler handler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +46,8 @@ public class SplashActivity extends AppCompatActivity {
                 Animation.RELATIVE_TO_SELF, 0.5f); // Y pivot: ortası
 
         // Ortak süre ve son konumda kalma
-        moveLeft.setDuration(500);
-        scaleDown.setDuration(500);
+        moveLeft.setDuration(logoAnimMiliSn);
+        scaleDown.setDuration(logoAnimMiliSn);
         moveLeft.setFillAfter(true);
         scaleDown.setFillAfter(true);
 
@@ -64,14 +64,14 @@ public class SplashActivity extends AppCompatActivity {
             appName.setVisibility(View.VISIBLE);
             appName.setText("");
             startTextAnimation();
-        }, 500);
+        }, logoAnimMiliSn);
 
         // 3 saniye sonra MainActivity'e geçiş yap
         handler.postDelayed(() -> {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
-        }, 2500);
+        }, 1800);
     }
 
     private void startTextAnimation() {
