@@ -1,0 +1,117 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#189ad3"
+    android:fitsSystemWindows="true">
+
+    <!-- Kapatma butonu -->
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        app:tint="#FFFFFF" />
+
+    <!-- İlaç ikonu -->
+    <ImageView
+        android:id="@+id/medicineIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/btnClose"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_medicine"
+        app:tint="#FFFFFF" />
+
+    <!-- Soru metni -->
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicineIcon"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hangi ilacı eklemeyi istiyorsunuz?"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium" />
+    <!-- Yatay ProgressBar -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/textQuestion"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:max="3"
+        android:progress="1"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:progressDrawable="@drawable/bg_progress_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_recycler"
+        android:layout_below="@id/progressBar">
+
+        <!-- Arama kutusu -->
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textQuestion"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="İlaç adı"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <!-- İlaç listesi -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/medicineRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:radius="20dp"/>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnNext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="Zaman Ekle"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/splash_background"
+        app:tint="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Sonraki"
+        android:textColor="@color/white"
+        android:backgroundTint="#004A99"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#2D80F6"/> <!-- Bu senin görseldeki maviye çok yakın -->
+    <corners android:radius="20dp"/>
+</shape>

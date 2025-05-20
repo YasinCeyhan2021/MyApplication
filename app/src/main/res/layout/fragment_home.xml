@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ECECEC">
+    android:layout_height="match_parent">
 
+    <!-- Tarih Seçici -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/dateSelector"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- Gün butonları dinamik eklenecek -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Bugün yazısı -->
     <TextView
+        android:id="@+id/todayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bugün, 11 May"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <!-- İlaç Listesi -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Ana Sayfa"
-        android:gravity="center"
-        android:textSize="24sp"
-        android:textColor="#000000"/>
-</FrameLayout>
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/medicineList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <!-- Saat başlıkları ve item_card_alarm kartları buraya gelecek -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

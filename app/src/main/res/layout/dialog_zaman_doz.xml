@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:backgroundTint="#FFFFFF">
+
+    <!-- Başlık -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaman ve Doz ayarla"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0073CF"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            app:tint="#888888"
+            android:layout_marginTop="4dp"/>
+    </RelativeLayout>
+
+    <!-- Zaman Seçici -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_gravity="center"/>
+
+
+    <!-- Doz Girişi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/editTextDoz"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/bg_doz"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doz"
+            android:textSize="16sp"
+            android:textColor="#888888"
+            android:paddingStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Ayarla Butonu -->
+    <Button
+        android:id="@+id/btnAyarla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayarla"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#004A99"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

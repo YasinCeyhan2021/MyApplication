@@ -1,0 +1,666 @@
+[
+  {
+    "isim": "Parol",
+    "tur": "Ağrı kesici",
+    "aciklama": "Parol içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Panadol",
+    "tur": "Ağrı kesici",
+    "aciklama": "Panadol içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Dolorex",
+    "tur": "Ağrı kesici",
+    "aciklama": "Dolorex içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Majezik",
+    "tur": "Ağrı kesici",
+    "aciklama": "Majezik içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Advil",
+    "tur": "Ağrı kesici",
+    "aciklama": "Advil içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Brufen",
+    "tur": "Ağrı kesici",
+    "aciklama": "Brufen içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Nurofen",
+    "tur": "Ağrı kesici",
+    "aciklama": "Nurofen içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Aspirin",
+    "tur": "Ağrı kesici",
+    "aciklama": "Aspirin içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Voltaren",
+    "tur": "Ağrı kesici",
+    "aciklama": "Voltaren içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Diclac",
+    "tur": "Ağrı kesici",
+    "aciklama": "Diclac içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Buscopan",
+    "tur": "Spazm çözücü",
+    "aciklama": "Buscopan içeren spazm çözücü.",
+    "kullanim": "Karın ağrısı ve spazmları giderme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Smecta",
+    "tur": "Antidiyare",
+    "aciklama": "Smecta içeren antidiyare.",
+    "kullanim": "İshal tedavisi",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Imodium",
+    "tur": "Antidiyare",
+    "aciklama": "Imodium içeren antidiyare.",
+    "kullanim": "İshal tedavisi",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Gaviscon",
+    "tur": "Antiasit",
+    "aciklama": "Gaviscon içeren antiasit.",
+    "kullanim": "Mide ekşimesi ve reflü",
+    "kullanim_sikligi": "Yemek sonrası",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Mucosolvan",
+    "tur": "Ekspektoran",
+    "aciklama": "Mucosolvan içeren ekspektoran.",
+    "kullanim": "Balgam söktürücü",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Telfast",
+    "tur": "Antihistaminik",
+    "aciklama": "Telfast içeren antihistaminik.",
+    "kullanim": "Alerji belirtileri",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Claritin",
+    "tur": "Antihistaminik",
+    "aciklama": "Claritin içeren antihistaminik.",
+    "kullanim": "Alerji belirtileri",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Allegra",
+    "tur": "Antihistaminik",
+    "aciklama": "Allegra içeren antihistaminik.",
+    "kullanim": "Alerji belirtileri",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Zyrtec",
+    "tur": "Antihistaminik",
+    "aciklama": "Zyrtec içeren antihistaminik.",
+    "kullanim": "Alerji belirtileri",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Controloc",
+    "tur": "Mide koruyucu",
+    "aciklama": "Controloc içeren mide koruyucu.",
+    "kullanim": "Mide ülseri ve reflü tedavisi",
+    "kullanim_sikligi": "Günde 1 defa aç karnına",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Nexium",
+    "tur": "Mide koruyucu",
+    "aciklama": "Nexium içeren mide koruyucu.",
+    "kullanim": "Mide ülseri ve reflü tedavisi",
+    "kullanim_sikligi": "Günde 1 defa aç karnına",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Losec",
+    "tur": "Mide koruyucu",
+    "aciklama": "Losec içeren mide koruyucu.",
+    "kullanim": "Mide ülseri ve reflü tedavisi",
+    "kullanim_sikligi": "Günde 1 defa aç karnına",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Zantac",
+    "tur": "Mide koruyucu",
+    "aciklama": "Zantac içeren mide koruyucu.",
+    "kullanim": "Mide ülseri ve reflü tedavisi",
+    "kullanim_sikligi": "Günde 1 defa aç karnına",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Quamatel",
+    "tur": "Mide koruyucu",
+    "aciklama": "Quamatel içeren mide koruyucu.",
+    "kullanim": "Mide ülseri ve reflü tedavisi",
+    "kullanim_sikligi": "Günde 1 defa aç karnına",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Augmentin",
+    "tur": "Antibiyotik",
+    "aciklama": "Augmentin içeren antibiyotik.",
+    "kullanim": "Bakteriyel enfeksiyonlar",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Ciprofloxacin",
+    "tur": "Antibiyotik",
+    "aciklama": "Ciprofloxacin içeren antibiyotik.",
+    "kullanim": "Bakteriyel enfeksiyonlar",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Amoxicillin",
+    "tur": "Antibiyotik",
+    "aciklama": "Amoxicillin içeren antibiyotik.",
+    "kullanim": "Bakteriyel enfeksiyonlar",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Pramin",
+    "tur": "Antiemetik",
+    "aciklama": "Pramin içeren antiemetik.",
+    "kullanim": "Bulantı ve kusma",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Reglan",
+    "tur": "Antiemetik",
+    "aciklama": "Reglan içeren antiemetik.",
+    "kullanim": "Bulantı ve kusma",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Xanax",
+    "tur": "Anksiyolitik",
+    "aciklama": "Xanax içeren anksiyolitik.",
+    "kullanim": "Kaygı ve panik atak",
+    "kullanim_sikligi": "Yatmadan önce",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Valium",
+    "tur": "Anksiyolitik",
+    "aciklama": "Valium içeren anksiyolitik.",
+    "kullanim": "Kaygı ve panik atak",
+    "kullanim_sikligi": "Yatmadan önce",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Atarax",
+    "tur": "Antihistaminik",
+    "aciklama": "Atarax içeren antihistaminik.",
+    "kullanim": "Alerji belirtileri",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Prozac",
+    "tur": "Antidepresan",
+    "aciklama": "Prozac içeren antidepresan.",
+    "kullanim": "Depresyon tedavisi",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Cipralex",
+    "tur": "Antidepresan",
+    "aciklama": "Cipralex içeren antidepresan.",
+    "kullanim": "Depresyon tedavisi",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Roaccutan",
+    "tur": "Retinoid",
+    "aciklama": "Roaccutan içeren retinoid.",
+    "kullanim": "Akne tedavisi",
+    "kullanim_sikligi": "Akşam yatmadan önce",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Differin",
+    "tur": "Retinoid",
+    "aciklama": "Differin içeren retinoid.",
+    "kullanim": "Akne tedavisi",
+    "kullanim_sikligi": "Akşam yatmadan önce",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Yasmin",
+    "tur": "Kontraseptif",
+    "aciklama": "Yasmin içeren kontraseptif.",
+    "kullanim": "Doğum kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Diane",
+    "tur": "Kontraseptif",
+    "aciklama": "Diane içeren kontraseptif.",
+    "kullanim": "Doğum kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Euthyrox",
+    "tur": "Tiroid hormonu",
+    "aciklama": "Euthyrox içeren tiroid hormonu.",
+    "kullanim": "Tiroid hormonu replasmanı",
+    "kullanim_sikligi": "Sabah aç karnına",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Glifor",
+    "tur": "Antidiabetik",
+    "aciklama": "Glifor içeren antidiabetik.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Metformin",
+    "tur": "Antidiabetik",
+    "aciklama": "Metformin içeren antidiabetik.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Januvia",
+    "tur": "Antidiabetik",
+    "aciklama": "Januvia içeren antidiabetik.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Jardiance",
+    "tur": "Antidiabetik",
+    "aciklama": "Jardiance içeren antidiabetik.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Lipitor",
+    "tur": "Statin",
+    "aciklama": "Lipitor içeren statin.",
+    "kullanim": "Kolesterol düşürme",
+    "kullanim_sikligi": "Yatmadan önce 1 tablet",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Crestor",
+    "tur": "Statin",
+    "aciklama": "Crestor içeren statin.",
+    "kullanim": "Kolesterol düşürme",
+    "kullanim_sikligi": "Yatmadan önce 1 tablet",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Zocor",
+    "tur": "Statin",
+    "aciklama": "Zocor içeren statin.",
+    "kullanim": "Kolesterol düşürme",
+    "kullanim_sikligi": "Yatmadan önce 1 tablet",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Cozaar",
+    "tur": "ACE inhibitörü",
+    "aciklama": "Cozaar içeren ace inhibitörü.",
+    "kullanim": "Tansiyon kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Enalapril",
+    "tur": "ACE inhibitörü",
+    "aciklama": "Enalapril içeren ace inhibitörü.",
+    "kullanim": "Tansiyon kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Ramipril",
+    "tur": "ACE inhibitörü",
+    "aciklama": "Ramipril içeren ace inhibitörü.",
+    "kullanim": "Tansiyon kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Atenolol",
+    "tur": "Beta-bloker",
+    "aciklama": "Atenolol içeren beta-bloker.",
+    "kullanim": "Kalp hızı kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Metoprolol",
+    "tur": "Beta-bloker",
+    "aciklama": "Metoprolol içeren beta-bloker.",
+    "kullanim": "Kalp hızı kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Bisoprolol",
+    "tur": "Beta-bloker",
+    "aciklama": "Bisoprolol içeren beta-bloker.",
+    "kullanim": "Kalp hızı kontrolü",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Furosemide",
+    "tur": "Diüretik",
+    "aciklama": "Furosemide içeren diüretik.",
+    "kullanim": "Ödem ve tansiyon kontrolü",
+    "kullanim_sikligi": "Sabah 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Hydrochlorothiazide",
+    "tur": "Diüretik",
+    "aciklama": "Hydrochlorothiazide içeren diüretik.",
+    "kullanim": "Ödem ve tansiyon kontrolü",
+    "kullanim_sikligi": "Sabah 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Spironolactone",
+    "tur": "Diüretik",
+    "aciklama": "Spironolactone içeren diüretik.",
+    "kullanim": "Ödem ve tansiyon kontrolü",
+    "kullanim_sikligi": "Sabah 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Ventolin",
+    "tur": "Bronkodilatör",
+    "aciklama": "Ventolin içeren bronkodilatör.",
+    "kullanim": "Astım ve KOAH tedavisi",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Seretide",
+    "tur": "Bronkodilatör",
+    "aciklama": "Seretide içeren bronkodilatör.",
+    "kullanim": "Astım ve KOAH tedavisi",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Symbicort",
+    "tur": "Bronkodilatör",
+    "aciklama": "Symbicort içeren bronkodilatör.",
+    "kullanim": "Astım ve KOAH tedavisi",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Spiriva",
+    "tur": "Bronkodilatör",
+    "aciklama": "Spiriva içeren bronkodilatör.",
+    "kullanim": "Astım ve KOAH tedavisi",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Budesonide",
+    "tur": "Kortikosteroid inhaler",
+    "aciklama": "Budesonide içeren kortikosteroid inhaler.",
+    "kullanim": "Solunum yolu inflamasyonu",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Montelukast",
+    "tur": "Antileukotrien",
+    "aciklama": "Montelukast içeren antileukotrien.",
+    "kullanim": "Astım tedavisi",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Prednol",
+    "tur": "Kortikosteroid",
+    "aciklama": "Prednol içeren kortikosteroid.",
+    "kullanim": "İnflamasyon baskılama",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Hydrocortisone",
+    "tur": "Kortikosteroid",
+    "aciklama": "Hydrocortisone içeren kortikosteroid.",
+    "kullanim": "İnflamasyon baskılama",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Betnesol",
+    "tur": "Kortikosteroid",
+    "aciklama": "Betnesol içeren kortikosteroid.",
+    "kullanim": "İnflamasyon baskılama",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Dovonex",
+    "tur": "Kalsipotriol",
+    "aciklama": "Dovonex içeren kalsipotriol.",
+    "kullanim": "Sedef hastalığı tedavisi",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Calcipotriol",
+    "tur": "Kalsipotriol",
+    "aciklama": "Calcipotriol içeren kalsipotriol.",
+    "kullanim": "Sedef hastalığı tedavisi",
+    "kullanim_sikligi": "Günde 2 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Insulin Aspart",
+    "tur": "İnsülin",
+    "aciklama": "Insulin Aspart içeren i̇nsülin.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Doza göre 1-3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Insulin Glargine",
+    "tur": "İnsülin",
+    "aciklama": "Insulin Glargine içeren i̇nsülin.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Doza göre 1-3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Insulin Lispro",
+    "tur": "İnsülin",
+    "aciklama": "Insulin Lispro içeren i̇nsülin.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Doza göre 1-3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Lantus",
+    "tur": "İnsülin",
+    "aciklama": "Lantus içeren i̇nsülin.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Doza göre 1-3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Novorapid",
+    "tur": "İnsülin",
+    "aciklama": "Novorapid içeren i̇nsülin.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Doza göre 1-3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Humalog",
+    "tur": "İnsülin",
+    "aciklama": "Humalog içeren i̇nsülin.",
+    "kullanim": "Kan şekeri kontrolü",
+    "kullanim_sikligi": "Doza göre 1-3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Naproxen",
+    "tur": "Ağrı kesici",
+    "aciklama": "Naproxen içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Celecoxib",
+    "tur": "Ağrı kesici",
+    "aciklama": "Celecoxib içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Tramadol",
+    "tur": "Ağrı kesici",
+    "aciklama": "Tramadol içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Codeine",
+    "tur": "Ağrı kesici",
+    "aciklama": "Codeine içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Melatonin",
+    "tur": "Uyku düzenleyici",
+    "aciklama": "Melatonin içeren uyku düzenleyici.",
+    "kullanim": "Uyku problemleri",
+    "kullanim_sikligi": "Yatmadan önce",
+    "recete_durumu": "Reçetesiz"
+  },
+  {
+    "isim": "Zolpidem",
+    "tur": "Uyku düzenleyici",
+    "aciklama": "Zolpidem içeren uyku düzenleyici.",
+    "kullanim": "Uyku problemleri",
+    "kullanim_sikligi": "Yatmadan önce",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Allopurinol",
+    "tur": "Antigout",
+    "aciklama": "Allopurinol içeren antigout.",
+    "kullanim": "Gut hastalığı tedavisi",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Diclofenac",
+    "tur": "Ağrı kesici",
+    "aciklama": "Diclofenac içeren ağrı kesici.",
+    "kullanim": "Ağrı ve ateş düşürme",
+    "kullanim_sikligi": "Günde 3 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Clopidogrel",
+    "tur": "Antikoagülan",
+    "aciklama": "Clopidogrel içeren antikoagülan.",
+    "kullanim": "Pıhtılaşma önleyici",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Warfarin",
+    "tur": "Antikoagülan",
+    "aciklama": "Warfarin içeren antikoagülan.",
+    "kullanim": "Pıhtılaşma önleyici",
+    "kullanim_sikligi": "Günde 1 defa",
+    "recete_durumu": "Reçeteli"
+  },
+  {
+    "isim": "Levothyroxine",
+    "tur": "Tiroid hormonu",
+    "aciklama": "Levothyroxine içeren tiroid hormonu.",
+    "kullanim": "Tiroid hormonu replasmanı",
+    "kullanim_sikligi": "Sabah aç karnına",
+    "recete_durumu": "Reçeteli"
+  }
+]

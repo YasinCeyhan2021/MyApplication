@@ -30,6 +30,19 @@
             android:layout_below="@id/toolbar"
             android:layout_above="@id/bottom_nav" />
 
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddPill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:contentDescription="Zaman Ekle"
+            android:src="@drawable/ic_add"
+            android:layout_above="@id/bottom_nav"
+            app:backgroundTint="@color/splash_background"
+            app:tint="@android:color/white" />
+
         <!-- BottomNavigation -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
@@ -42,6 +55,8 @@
             app:labelVisibilityMode="selected"
             android:background="@color/white"
             app:itemBackground="@color/white" />
+
+
 
     </RelativeLayout>
 

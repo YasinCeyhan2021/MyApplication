@@ -4,6 +4,8 @@
         <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/logo</item>
         <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="31">@color/splash_background</item>
         <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/splash_background</item>
+        <!-- Durum çubuğu rengini sabitle -->
+        <item name="android:statusBarColor">@color/splash_background</item>
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />

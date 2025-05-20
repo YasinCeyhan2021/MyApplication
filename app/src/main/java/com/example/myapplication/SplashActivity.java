@@ -1,8 +1,13 @@
 package com.example.myapplication;
 
-import android.animation.ObjectAnimator;
-import android.content.Intent;
+import android.Manifest;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.util.Log;
 import android.os.Bundle;
+import android.widget.Toast;
+import android.content.Intent;
 import android.os.Handler;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,52 +17,77 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import com.google.firebase.auth.FirebaseUser;
 
 public class SplashActivity extends AppCompatActivity {
+
     TextView appName;
     ImageView splashLogo;
     String fullText;
     int index = 0, logoAnimMiliSn = 500;
     private Handler handler = new Handler();
+    private User user;
+
+    private PermissionHelper permissionHelper;
+    private static final int PERMISSION_REQUEST_CODE = 1001; // İzin istek kodu
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
+        permissionHelper = new PermissionHelper(this);
+        if (permissionHelper.checkAndRequestNotificationPermission()) {
+            onPermissionGranted();
+        }
+    }
+
+
+    // İzin verildiğinde yapılacak işlem
+    private void onPermissionGranted() {
+        userKontrol();
+
         fullText = getString(R.string.app_name);
-        appName = (TextView) findViewById(R.id.appName);
-        splashLogo = (ImageView) findViewById(R.id.splashLogo);
+        appName = findViewById(R.id.appName);
+        splashLogo = findViewById(R.id.splashLogo);
+
+        startLogoAnimation();
+    }
+
+    // Firebase kullanıcı kontrolü
+    private void userKontrol() {
+        user = new User();
+
+        user.checkOrCreateUser(task -> {
+            if (task.isSuccessful()) {
+                anaEkranaGec();
+            } else {
+                Log.e("Auth", "Kullanıcı giriş hatası", task.getException());
+            }
+        });
+    }
 
 
-        // Sola kaydırma (X: 0'dan -1000'e), Y sabit
+    // Logo animasyonu
+    private void startLogoAnimation(){
         TranslateAnimation moveLeft = new TranslateAnimation(0, -300, 0, 0);
+        ScaleAnimation scaleDown = new ScaleAnimation(1.0f, 0.7f, 1.0f, 0.7f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 
-        // Ölçeklendirme (X ve Y %100'den %50'ye)
-        ScaleAnimation scaleDown = new ScaleAnimation(
-                1.0f, 0.7f,  // X yönünde %100 → %50
-                1.0f, 0.7f,  // Y yönünde %100 → %50
-                Animation.RELATIVE_TO_SELF, 0.5f,  // X pivot: ortası
-                Animation.RELATIVE_TO_SELF, 0.5f); // Y pivot: ortası
-
-        // Ortak süre ve son konumda kalma
         moveLeft.setDuration(logoAnimMiliSn);
         scaleDown.setDuration(logoAnimMiliSn);
         moveLeft.setFillAfter(true);
         scaleDown.setFillAfter(true);
 
-        // İkisini birleştirelim
         AnimationSet animationSet = new AnimationSet(true);
         animationSet.addAnimation(moveLeft);
         animationSet.addAnimation(scaleDown);
         animationSet.setFillAfter(true);
 
-        // Başlatalım!
         splashLogo.startAnimation(animationSet);
 
         handler.postDelayed(() -> {
@@ -65,15 +95,9 @@ public class SplashActivity extends AppCompatActivity {
             appName.setText("");
             startTextAnimation();
         }, logoAnimMiliSn);
-
-        // 3 saniye sonra MainActivity'e geçiş yap
-        handler.postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }, 1800);
     }
 
+    // Yazı animasyonu
     private void startTextAnimation() {
         handler.postDelayed(new Runnable() {
             @Override
@@ -86,4 +110,26 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, 50);
     }
+
+    // Ana ekrana geçiş
+    private void anaEkranaGec(){
+        handler.postDelayed(() -> {
+            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }, 1600);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (permissionHelper.handlePermissionsResult(requestCode, grantResults)) {
+            onPermissionGranted();
+        } else {
+            permissionHelper.showPermissionRationale();
+        }
+    }
+
+
 }

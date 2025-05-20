@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -12,62 +13,55 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNav;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
+    FloatingActionButton btnAddPill;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         // Başlangıç fragment
-        loadFragment(new HomeFragment());
+        loadFragment(new FragmentHome());
         bottomNav = (BottomNavigationView) findViewById(R.id.bottom_nav);
         // Toolbar bağlantısı
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Drawer bağlantısı
         drawerLayout = findViewById(R.id.drawer_layout);
+        btnAddPill = findViewById(R.id.btnAddPill);
 
-        // Menü toggle
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawerLayout, toolbar,
-                R.string.navigation_drawer_open,
-                R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+        btnAddPill.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AlarmKurActivity.class);
+            startActivity(intent);
+        });
 
-
-
-
-        // Menü tıklamaları dinle
         bottomNav.setOnItemSelectedListener(item -> {
-            Fragment selectedFragment;
 
             int itemId = item.getItemId();
             if (itemId == R.id.nav_home) {
-                selectedFragment = new HomeFragment();
-            } else if (itemId == R.id.nav_ilac) {
-                selectedFragment = new IlacFragment();
-            } else if (itemId == R.id.nav_takip) {
-                selectedFragment = new TakipFragment();
+                loadFragment(new FragmentHome());
+            } else if (itemId == R.id.nav_more) {
+                loadFragment(new FragmentHome());
             } else {
                 return false;
             }
-
-            loadFragment(selectedFragment);
             return true;
         });
     }
     private void loadFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, fragment);  // container id'sine dikkat!
+        fragmentTransaction.replace(R.id.container, fragment);
         fragmentTransaction.commit();
     }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "62617236829",
+    "project_id": "medifamily-1d5b9",
+    "storage_bucket": "medifamily-1d5b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62617236829:android:677269adb7b97e6261a4b4",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhTgq_oCgQOLg9LQclIX11OVhlI4-MDuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

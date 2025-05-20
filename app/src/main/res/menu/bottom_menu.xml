@@ -1,7 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/nav_home" android:icon="@drawable/ic_home" android:title="Ana sayfa" />
-    <item android:id="@+id/nav_updates" android:icon="@drawable/ic_pill" android:title="Güncellemeler" />
-    <item android:id="@+id/nav_ilac" android:icon="@drawable/ic_add" android:title="İlaçlar" />
-    <item android:id="@+id/nav_takip" android:icon="@drawable/ic_track" android:title="Takip" />
+    <!-- <item android:id="@+id/nav_updates" android:icon="@drawable/ic_pill" android:title="Güncellemeler" /> -->
+    <!-- <item android:id="@+id/nav_takip" android:icon="@drawable/ic_track" android:title="Takip" /> -->
     <item android:id="@+id/nav_more" android:icon="@drawable/ic_more" android:title="Daha Fazla" />
 </menu>
